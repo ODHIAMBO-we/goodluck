@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Luck! ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Soft, romantic pink gradient */
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 45px 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            max-width: 420px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #ff4b82;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: #555;
+        }
+
+        button {
+            background-color: #ff4b82;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 75, 130, 0.3);
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #e6396c;
+            transform: scale(1.05);
+        }
+
+        #secret-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4b82;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Good Luck, My Love!</h1>
+        
+        <p>
+            You have worked so hard for this, and I just wanted to remind you how incredibly proud I am of you. always remember that i'm your number one supporter. 
+            Take a deep breath, trust yourself, and do your best. I believe in you completely!
+        </p>
+
+        <button id="reveal-btn">Tap for a little extra luck ✨</button>
+
+        <div id="secret-message">
+            Baby loves you so much! You're going to do great! ❤️
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('reveal-btn');
+        const message = document.getElementById('secret-message');
+
+        btn.addEventListener('click', () => {
+            // Hide the button and show the sweet message
+            btn.style.display = 'none';
+            message.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
